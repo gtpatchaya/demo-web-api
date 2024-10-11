@@ -1,0 +1,14 @@
+// create & migrate table 
+1. create model
+2. npx sequelize-cli migration:generate --name create-license
+3. edit file migration
+4. npx sequelize-cli db:migrate
+
+// add column
+1. npx sequelize-cli migration:generate --name add-contractNumber-to-yourTableName
+
+
+// create & migrate seed data
+1. npx sequelize-cli seed:generate --name add-provinces
+2. edit file seed
+3. npx sequelize-cli db:seed --seed YYYYMMDDHHMMSS-seed-file-name.js ** สั่ง insert ข้อมูลบางไฟล์
